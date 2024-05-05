@@ -149,8 +149,8 @@ EMAIL_HOST_USER = "robitetcco@gmail.com"
 EMAIL_HOST_PASSWORD = ""
 EMAIL_PORT = 587
 
-CDN_ACCESS_KEY = "6f96d6b9-478c-47ec-a9d6-1f6c44b17ae5"
-CDN_SECRET_KEY = "90ac015140873360a55ef3663697d4b56e0e2ef4d4056cc1b3f042e4bb31ff95"
+CDN_ACCESS_KEY = ""
+CDN_SECRET_KEY = ""
 CDN_ENDPOINT = "s3.ir-thr-at1.arvanstorage.com"
 CDN_BUCKET_NAME = "daddycheck"
 CDN_LOCAL_DIR = PROJECT_ROOT + f"/buckets/{CDN_BUCKET_NAME}/"
@@ -158,7 +158,7 @@ CDN_LOCAL_DIR = PROJECT_ROOT + f"/buckets/{CDN_BUCKET_NAME}/"
 TEMP_DIR = PROJECT_ROOT + "/temp/"
 PERMA_DIR = PROJECT_ROOT + "/data/"
 
-UUID_ROOT = uuid.UUID("6f96d6b9-478c-47ec-a9d6-1f6c44b17ae5")  # Same as CDN_ACCESS_KEY
+UUID_ROOT = uuid.UUID("")  # Same as CDN_ACCESS_KEY
 
 FILENAME_FORMAT_TEMP = TEMP_DIR + "{index}_{io}_{user}@{analysis}.{extension}"
 FILENAME_FORMAT_PERMA = PERMA_DIR + "{analysis}/{index}{io}.{extension}"
